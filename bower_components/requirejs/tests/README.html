@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Middleman</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="bower_components bower_components_requirejs bower_components_requirejs_tests bower_components_requirejs_tests_README" data-spy="scroll" data-target="#navbar-example">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=503383796425027";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <h1 id="requirejs-testing">RequireJS Testing</h1>
+
+<p>This is a list of things to test before doing a RequireJS release.</p>
+
+<p><strong>Update all subprojects via ./updatesubs.sh FIRST</strong></p>
+
+<h2 id="items-in-tests-directory">Items in tests directory</h2>
+
+<ul>
+  <li>All browsers: tests/doh/runner.html?testUrl=../all in all the browsers</li>
+  <li>go to tests/ run alln.sh and allj.sh</li>
+  <li>Optional, only do on major refactors: tests/commonjs, run each file in browser.</li>
+</ul>
+
+<h2 id="node-testing">Node testing</h2>
+
+<p>Go to r.js project and run the following:</p>
+
+<ul>
+  <li>cd tests</li>
+  <li>./alln.sh</li>
+  <li>node allNode.js</li>
+  <li>./allj.sh</li>
+  <li>node ../../r.js index.js</li>
+  <li>node canvasTest.js (use nave and do the npm installs listed in the JS file)</li>
+  <li>cd ../build/tests</li>
+  <li>./alln.sh</li>
+  <li>./allj.sh</li>
+</ul>
+
+<p>Try manual testing:</p>
+
+<h1 id="sample-jquery-project">Sample jQuery project</h1>
+
+<p>Test the sample jQuery project, complete with running the optimizer, testing the output.</p>
+
+<h1 id="coffeescript-plugin">CoffeeScript plugin</h1>
+
+<p>Check it.</p>
+
+<h1 id="jqueryui-amd-project">jQueryUI AMD project</h1>
+
+<p>Check it.</p>
+
+
+    <script type="text/javascript">
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/client:plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    </script>
+
+    <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.ulfstoffels.de/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "2"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+    <noscript>
+      <!-- Piwik Image Tracker -->
+      <img src="http://analytics.ulfstoffels.de/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+      <!-- End Piwik -->
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Middleman</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="bower_components bower_components_requirejs bower_components_requirejs_README" data-spy="scroll" data-target="#navbar-example">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=503383796425027";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <h1 id="requirejs">RequireJS</h1>
+
+<p>RequireJS loads plain JavaScript files as well as more defined modules. It is
+optimized for in-browser use, including in
+<a href="http://requirejs.org/docs/api.html#webworker">a Web Worker</a>, but it can be used
+in other JavaScript environments, like Rhino and
+<a href="http://requirejs.org/docs/node.html">Node</a>. It implements the
+<a href="https://github.com/amdjs/amdjs-api/wiki/AMD">Asynchronous Module</a>
+API.</p>
+
+<p>RequireJS uses plain script tags to load modules/files, so it should allow for
+easy debugging. It can be used
+<a href="http://requirejs.org/docs/api.html#jsfiles">simply to load existing JavaScript files</a>,
+so you can add it to your existing project without having to re-write your
+JavaScript files.</p>
+
+<p>RequireJS includes <a href="http://requirejs.org/docs/optimization.html">an optimization tool</a>
+you can run as part of your packaging steps for deploying your code. The
+optimization tool can combine and minify your JavaScript files to allow for
+better performance.</p>
+
+<p>If the JavaScript file defines a JavaScript module via
+<a href="http://requirejs.org/docs/api.html#define">define()</a>, then there are other benefits
+RequireJS can offer: <a href="http://requirejs.org/docs/commonjs.html">improvements over traditional CommonJS modules</a>
+and <a href="http://requirejs.org/docs/api.html#multiversion">loading multiple versions</a>
+of a module in a page. RequireJS also has a plugin system that supports features like
+<a href="http://requirejs.org/docs/api.html#i18n">i18n string bundles</a>, and
+<a href="http://requirejs.org/docs/api.html#text">text file dependencies</a>.</p>
+
+<p>RequireJS does not have any dependencies on a JavaScript framework.
+It is dual-licensed – new BSD or MIT.</p>
+
+<p>The standard require.js file is around 5.5KB when minified via Closure Compiler
+and gzipped.</p>
+
+<p>RequireJS works in IE 6+, Firefox 2+, Safari 3.2+, Chrome 3+, and Opera 10+.</p>
+
+<p><a href="http://requirejs.org/docs/download.html">Latest Release</a></p>
+
+<h2 id="directories">Directories</h2>
+
+<ul>
+  <li><strong>dist</strong>: Scripts and assets to generate the requirejs.org docs, and for
+generating a require.js release.</li>
+  <li><strong>docs</strong>: The raw HTML files for the requirejs.org docs. Only includes the
+body of each page. Files in <strong>dist</strong> are used to generate a complete HTML page.</li>
+  <li><strong>tests</strong>: Tests for require.js.</li>
+  <li><strong>testBaseUrl.js</strong>: A file used in the tests inside <strong>tests</strong>. Purposely
+placed outside the tests directory for testing paths that go outside a baseUrl.</li>
+  <li><strong>updatesubs.sh</strong>: Updates projects that depend on require.js Assumes the
+projects are siblings to this directory and have specific names. Useful to
+copy require.js to dependent projects easily while in development.</li>
+</ul>
+
+
+    <script type="text/javascript">
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/client:plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    </script>
+
+    <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.ulfstoffels.de/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "2"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+    <noscript>
+      <!-- Piwik Image Tracker -->
+      <img src="http://analytics.ulfstoffels.de/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+      <!-- End Piwik -->
+    </noscript>
+</body>
+</html>
